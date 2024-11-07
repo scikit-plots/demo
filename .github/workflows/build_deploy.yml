@@ -44,10 +44,6 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
 
-      # Runs command: Upload artifact
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-
       # Runs command: Setup Python
       - name: Setup Python
         uses: actions/setup-python@v5
