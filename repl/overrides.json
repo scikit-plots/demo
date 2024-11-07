@@ -1,17 +1,50 @@
 {
-    "@jupyterlab/console-extension:tracker": {
-        "interactionMode": "terminal"
-    },
-    "@jupyterlab/notebook-extension:panel": {
-      "toolbar": [
-        {
-          "name": "download",
-          "label": "Download",
-          "args": {},
-          "command": "docmanager:download",
-          "icon": "ui-components:download",
-          "rank": 50
+  "@jupyterlab/console-extension:tracker": {
+      "interactionMode": "terminal"
+  },
+  "@jupyterlab/notebook-extension:panel": {
+    "toolbar": [
+      {
+        "name": "download",
+        "label": "Download",
+        "args": {},
+        "command": "docmanager:download",
+        "icon": "ui-components:download",
+        "rank": 50
+      }
+    ]
+  },
+  "jupyter-config-data": {
+    "litePluginSettings": {
+      "@jupyterlite/lab-extension:main": {
+        "workspace": {
+          "files": ["content/default_notebook.ipynb"]
+        },
+        "toolbar": {
+          "items": [
+            {
+              "name": "Run",
+              "command": "run-cell",
+              "icon": "fa fa-play",
+              "tooltip": "Run the current cell"
+            },
+            {
+              "name": "Insert",
+              "command": "insert-cell",
+              "icon": "fa fa-plus",
+              "tooltip": "Insert a new cell"
+            },
+            {
+              "name": "download",
+              "label": "Download",
+              "args": {},
+              "command": "docmanager:download",
+              "icon": "ui-components:download",
+              "rank": 50
+            }
+          ]
         }
-      ]
+      }
     }
+  }
 }
