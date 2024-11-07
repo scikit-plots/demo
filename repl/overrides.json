@@ -1,20 +1,11 @@
 {
-  "@jupyterlab/console-extension:tracker": {
-      "interactionMode": "terminal"
-  },
-  "@jupyterlab/notebook-extension:panel": {
-    "toolbar": [
-      {
-        "name": "download",
-        "label": "Download",
-        "args": {},
-        "command": "docmanager:download",
-        "icon": "ui-components:download",
-        "rank": 50
-      }
-    ]
-  },
   "jupyter-config-data": {
+    "appName": "JupyterLite Examples",
+    "appUrl": "./lab",
+    "baseUrl": "./",
+    "defaultKernelName": "python",
+    "collaborative": true,
+    "exposeAppInBrowser": true,
     "litePluginSettings": {
       "@jupyterlite/lab-extension:main": {
         "workspace": {
@@ -46,5 +37,20 @@
         }
       }
     }
+  },
+  "@jupyterlab/console-extension:tracker": {
+      "interactionMode": "terminal"
+  },
+  "@jupyterlab/notebook-extension:panel": {
+    "toolbar": [
+      {
+        "name": "download",
+        "label": "Download",
+        "args": {},
+        "command": "docmanager:download",
+        "icon": "ui-components:download",
+        "rank": 50
+      }
+    ]
   }
 }
