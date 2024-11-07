@@ -23,7 +23,7 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v4
 
       # Runs a single command using the runners shell
@@ -51,7 +51,7 @@ jobs:
       - name: Build the JupyterLite site
         run: |
           cp README.md content
-          jupyter lite build --contents content --contents scikit-plots --output-dir dist
+          jupyter lite build --contents content --output-dir dist
 
       # Runs command: Upload artifact
       - name: Upload artifact
