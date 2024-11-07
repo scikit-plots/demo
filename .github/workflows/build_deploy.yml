@@ -51,17 +51,13 @@ jobs:
       - name: Build the JupyterLite site
         run: |
           cp README.md content
-          jupyter lite build --contents content --output-dir dist
+          jupyter lite build --contents content --contents scikit-plots --output-dir dist
 
       # Runs command: Upload artifact
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./dist
-
-      # Runs command Setup Python
-      - name: Setup Python
-        uses: actions/setup-python@v5
       
   # Deployment job
   deploy:
