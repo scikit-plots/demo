@@ -7,11 +7,7 @@
         "jupyterlab-tour"
       ],
       "appName": "JupyterLite Examples",
-      "appUrl": "./lab",
-      "baseUrl": "./",
       "defaultKernelName": "python",
-      "collaborative": true,
-      "exposeAppInBrowser": true,
       "litePluginSettings": {
         "@jupyterlite/lab-extension:main": {
           "workspace": {
