@@ -16,4 +16,5 @@ dependencies:
   - scikit-learn
   # pip dependencies from requirements.txt
   - pip:
-      - -r file:requirements.txt
+      # - -r file:./requirements.txt
+      - -r requirements.txt
