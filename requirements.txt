@@ -24,7 +24,7 @@ jupyterlite-javascript-kernel~=0.3
 jupyterlite-p5-kernel~=0.1
 
 # r kernel (optional)
-r2_kernel~=0.1
+--no-binary r2_kernel~=0.1
 rpy2~=3.5
 
 # c kernel (optional)
