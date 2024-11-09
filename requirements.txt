@@ -27,18 +27,18 @@ jupyterlite-p5-kernel~=0.1
 rpy2~=3.5
 
 # c kernel (optional)
-libarchive-c
-jupyter_c_kernel~=1.2
+# libarchive-c
+# jupyter_c_kernel~=1.2
 
 # cpp kernel (optional)
-jupyter-cpp-kernel==1.0.0a8
+# jupyter-cpp-kernel==1.0.0a8
 
 # fortran kernel (optional)
-jupyter-fortran-kernel~=0.1
+# jupyter-fortran-kernel~=0.1
 
 # Jupyter kernel LLMs locally (optional)
-ipy-llm-kernel~=0.2
-chatbot-kernel~=0.3
+# ipy-llm-kernel~=0.2
+# chatbot-kernel~=0.3
 
 # JupyterLab: Fasta file renderer (optional)
 jupyterlab-fasta>=3.3.0,<4
