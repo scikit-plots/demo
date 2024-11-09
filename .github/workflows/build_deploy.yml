@@ -52,20 +52,20 @@ jobs:
         with:
           python-version: '3.11'
 
-      # Runs command: Install the dependencies
+      # Runs command: Install dependencies listed in requirements.txt
       - name: Install the dependencies
         run: |
           python -m pip install -U pip
           python -m pip install -r requirements.txt
 
-      # Runs command: Build the JupyterLite site
+      # Runs command: Build the JupyterLite site (replace with your actual build command)
       - name: Build the JupyterLite site
         id: build
         run: |
           cp README.md content
           jupyter lite build --contents content --output-dir dist
 
-      # Runs command: Upload artifact
+      # Runs command: Upload the build output artifact for deployment
       - name: Upload extension packages
         uses: actions/upload-pages-artifact@v3
         with:
@@ -95,6 +95,20 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
+      # Step 1: Checkout the repository
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # Step 5: Download the previously uploaded artifact (This is crucial for deploy-pages to work)
+      - name: Download GitHub Pages artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: jupyterlite-pyodide-kernel-dist-${{ github.run_number }}
+          path: ./dist
+
+      # Step 6: Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4 # or specific "vX.X.X" version tag for this action
+        uses: actions/deploy-pages@v4
+        with:
+          artifact_name: jupyterlite-pyodide-kernel-dist-${{ github.run_number }}
