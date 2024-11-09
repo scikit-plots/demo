@@ -31,7 +31,7 @@ rpy2~=3.5
 jupyter_c_kernel~=1.2
 
 # cpp kernel (optional)
-jupyter-cpp-kernel>=1.0
+jupyter-cpp-kernel==1.0.0a8
 
 # fortran kernel (optional)
 jupyter-fortran-kernel~=0.1
