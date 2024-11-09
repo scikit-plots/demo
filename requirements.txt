@@ -1,6 +1,5 @@
 # Core modules (mandatory)
 jupyterlite-core>=0.4
-jupyterlite-xeus>=2.1
 jupyterlab~=4.2
 notebook~=7.2
 replite~=0.1

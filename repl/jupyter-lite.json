@@ -23,9 +23,5 @@
         "pyodideUrl": "https://cdn.jsdelivr.net/pyodide/v0.26.0/full/pyodide.js"
       }
     }
-  },
-  "jupyterlite-xeus": {
-    "prefix": "/home/runner/work/demo/demo/cockle_wasm_env",
-    "environment_file": "./environment.yml"
   }
 }
