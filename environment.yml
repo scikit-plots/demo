@@ -1,19 +1,19 @@
-name: xeus-python-kernel
-channels:
-  # xeus-python supports pre-installing packages from
-  # emscripten-forge and conda-forge,
-  # by providing an environment.yml file
-  # defining the runtime environment
-  - https://repo.mamba.pm/emscripten-forge
-  - conda-forge
-dependencies:
-  # Only no-arch packages from conda-forge
-  # and packages from emscripten-forge can be installed.
-  - python=3.11
-  - xeus-python
-  - ipycanvas
-  - numpy
-  - matplotlib
-  # pip dependencies from requirements.txt
-  # - pip:
-  #     - -r file:requirements.txt
+# name: xeus-python-kernel
+# channels:
+#   # xeus-python supports pre-installing packages from
+#   # emscripten-forge and conda-forge,
+#   # by providing an environment.yml file
+#   # defining the runtime environment
+#   - https://repo.mamba.pm/emscripten-forge
+#   - conda-forge
+# dependencies:
+#   # Only no-arch packages from conda-forge
+#   # and packages from emscripten-forge can be installed.
+#   - python=3.11
+#   - xeus-python
+#   - ipycanvas
+#   - numpy
+#   - matplotlib
+#   # pip dependencies from requirements.txt
+#   # - pip:
+#   #     - -r file:requirements.txt

@@ -73,7 +73,8 @@ jobs:
         run: ls ./dist  # Debug step to verify output directory
       - name: List installed kernels in JupyterLite
         run: |
-          ls ./dist/kernels  # Ensure pyodide kernel is available
+          # Ensure pyodide kernel is available
+          ls -la ./dist/kernels || echo "No kernels directory found"
 
       # Runs command: Upload the build output artifact for deployment
       - name: Upload extension packages

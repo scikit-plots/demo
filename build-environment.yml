@@ -8,7 +8,7 @@ dependencies:
   - pip
   - jupyter_server
   - jupyterlite-core >=0.4.1,<0.5.0
-  # - jupyterlite-xeus>=2.0.0,<3
+  # - jupyterlite-xeus>=2.0.0,<3  # environment.yml
   - scipy
   - numpy
   - pandas
@@ -16,5 +16,7 @@ dependencies:
   - scikit-learn
   # pip dependencies from requirements.txt
   - pip:
-      # - -r file:./requirements.txt
+      # Use another requirements file.
+      # Note that here also we can use relative paths.
+      # pip will be run from the environment file directory, if provided.
       - -r requirements.txt
