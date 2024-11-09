@@ -1,9 +1,0 @@
-{
-    "LiteBuildConfig": {
-        "apps": ["lab"],
-        "no_unused_shared_packages": true,
-        "no_sourcemaps": true,
-        "contents": ["content"],
-        "output_dir": "dist"
-    }
-}
