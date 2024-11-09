@@ -25,6 +25,7 @@
     }
   },
   "jupyterlite-xeus": {
-    "prefix": "./cockle_wasm_env"
+    "prefix": "/home/runner/work/demo/demo/cockle_wasm_env",
+    "environment_file": "./environment.yml"
   }
 }
