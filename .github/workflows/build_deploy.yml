@@ -60,7 +60,7 @@ jobs:
 
       # Runs command: Upload artifact
       - name: Upload extension packages
-        uses: actions/upload-pages-artifact@v4
+        uses: actions/upload-pages-artifact@v3
         with:
           name: jupyterlite-pyodide-kernel-dist-${{ github.run_number }}
           path: ./dist
