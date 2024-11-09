@@ -1,6 +1,6 @@
 name: build-env
 channels:
-  - defaults
+  # - defaults
   - conda-forge
 dependencies:
   # Conda packages
