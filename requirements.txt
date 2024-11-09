@@ -2,9 +2,9 @@
 jupyterlite-core>=0.4
 jupyterlab~=4.2
 notebook~=7.2
-replite~=0.1
-voici-core~=0.7
-voici~=0.7
+# replite~=0.1
+# voici-core~=0.7
+# voici~=0.7
 
 # Language support (optional)
 jupyterlab-language-pack-fr-FR
