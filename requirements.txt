@@ -69,8 +69,3 @@ bqplot
 
 # Python: libraries (optional)
 scikit-plots
-scikit-learn
-scipy
-numpy
-pandas
-matplotlib
