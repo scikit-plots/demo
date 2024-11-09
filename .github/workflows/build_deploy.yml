@@ -109,9 +109,12 @@ jobs:
       - name: Download GitHub Pages artifact
         uses: actions/download-artifact@v3
         with:
+          # name: jupyterlite-pyodide-kernel-dist-${{ github.run_number }}
           path: ./dist
 
       # Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+        # with:
+        #   artifact_name: jupyterlite-pyodide-kernel-dist-${{ github.run_number }}

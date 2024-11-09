@@ -23,9 +23,9 @@ jupyterlite-p5-kernel~=0.1
 jupyterlite-terminal~=0.1
 
 # r kernel (optional)
-IPython
-r2_kernel~=0.1
-rpy2~=3.5
+# IPython
+# r2_kernel~=0.1
+# rpy2~=3.5
 
 # c kernel (optional)
 libarchive-c
