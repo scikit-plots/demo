@@ -75,6 +75,14 @@ jobs:
           name: jupyterlite-pyodide-kernel-dist-${{ github.run_number }}
           path: ./dist
           if-no-files-found: error
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: jupyterlite-pyodide-kernel-dist-${{ github.run_number }}
+          path: ./dist
+          if-no-files-found: error
+
       
   # Deployment job
   deploy:
