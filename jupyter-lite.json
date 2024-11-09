@@ -1,7 +1,7 @@
 {
   "jupyter-lite-schema-version": 0,
   "jupyter-config-data": {
-    "appName": "JupyterLite",
+    "appName": "scikit-plots JupyterLite",
     "appVersion": "0.4.4",
     "appUrl": "./lab",
     "baseUrl": "./",
@@ -10,6 +10,7 @@
     "federated_extensions": [],
     "fullLabextensionsUrl": "./extensions",
     "fullStaticUrl": "./build",
-    "licensesUrl": "./lab/api/licenses"
+    "licensesUrl": "./lab/api/licenses",
+    "collaborative": true
   }
 }

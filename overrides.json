@@ -1,20 +1,17 @@
 {
-  "jupyterlab-tour:user-tours": {
-    "tours": [
+  "@jupyterlab/notebook-extension:panel": {
+    "toolbar": [
       {
-        "id": "jupyter-lite",
-        "label": "Welcome to JupyterLite",
-        "steps": [
-          {
-            "target": "#jp-MainLogo",
-            "content": "This is JupyterLite"
-          }
-        ],
-        "options": {}
+        "name": "download",
+        "label": "Download",
+        "args": {},
+        "command": "docmanager:download",
+        "icon": "ui-components:download",
+        "rank": 50
       }
     ]
   },
   "@jupyterlab/github:drive": {
-    "defaultRepo": "jupyterlite/jupyterlite"
+    "defaultRepo": ""
   }
 }
