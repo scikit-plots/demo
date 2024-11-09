@@ -65,6 +65,7 @@ jobs:
           cp README.md content
           jupyter lite build --contents content --output-dir dist
 
+      # List build directory contents (for debugging)
       - name: List build directory contents
         run: ls ./dist  # Debug step to verify output directory
 
@@ -72,16 +73,7 @@ jobs:
       - name: Upload extension packages
         uses: actions/upload-pages-artifact@v3
         with:
-          name: jupyterlite-pyodide-kernel-dist-${{ github.run_number }}
           path: ./dist
-          if-no-files-found: error
-
-      - name: Upload artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: jupyterlite-pyodide-kernel-dist-${{ github.run_number }}
-          path: ./dist
-          if-no-files-found: error
 
       
   # Deployment job
@@ -112,12 +104,9 @@ jobs:
       - name: Download GitHub Pages artifact
         uses: actions/download-artifact@v3
         with:
-          name: jupyterlite-pyodide-kernel-dist-${{ github.run_number }}
           path: ./dist
 
       # Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-        with:
-          artifact_name: jupyterlite-pyodide-kernel-dist-${{ github.run_number }}
