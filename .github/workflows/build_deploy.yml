@@ -39,6 +39,13 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      # Runs command: Setup micromamba
+      - name: Install micromamba
+        run: |
+          curl -L https://micro.mamba.pm/api/micromamba/linux-64/latest | tar -xj -C /usr/local/bin/ --strip-components=1 bin/micromamba
+          export PATH="/usr/local/bin:$PATH"
+          micromamba --version
+
       # Runs command: Setup Python
       - name: Setup Python
         uses: actions/setup-python@v5
