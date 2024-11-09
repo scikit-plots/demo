@@ -10,8 +10,5 @@
         "rank": 50
       }
     ]
-  },
-  "@jupyterlab/github:drive": {
-    "defaultRepo": ""
   }
 }
