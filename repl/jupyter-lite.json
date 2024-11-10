@@ -11,20 +11,6 @@
   "jupyter-config-data": {
     "appName": "scikit-plots REPLite",
     "appUrl": "./repl",
-    "piplite_wheels": [
-      "pip",
-      "scikit-plot",
-      "pandas"
-    ],
-    "toolbar": 1,
-    "defaultKernelName": "python",
-    "@jupyterlite/pyolite-kernel:kernel": {
-      "startupCode": [
-        "import numpy as np",
-        "import micropip",
-        "await micropip.install('matplotlib')"
-      ]
-    },
     "disabledExtensions": [
       "@jupyterlite/javascript-kernel-extension",
       "@jupyter-widgets/jupyterlab-manager",
@@ -34,15 +20,8 @@
     ],
     "litePluginSettings": {
       "@jupyterlite/pyodide-kernel-extension:kernel": {
-        "pyodideUrl": "https://cdn.jsdelivr.net/pyodide/v0.26.0/full/pyodide.js",
-        "kernelName": "pyodide-v0.26"
+        "pyodideUrl": "https://cdn.jsdelivr.net/pyodide/v0.26.0/full/pyodide.js"
       }
-    }
-  },
-  "kernelspecs": {
-    "pyodide-v0.26": {
-      "name": "python3",
-      "display_name": "Python3 (Pyodide)"
     }
   }
 }
