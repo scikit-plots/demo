@@ -7,25 +7,26 @@
       "scikit-plots",
       "pandas"
     ],
-    "toolbar": 1,
-    "@jupyterlite/pyolite-kernel:kernel": {
-      "startupCode": [
-        "import numpy as np",
-        "import micropip",
-        "await micropip.install('matplotlib')"
-      ]
-    },
-    "@jupyterlab/notebook-extension:panel": {
-      "toolbar": [
-        {
-          "name": "download",
-          "label": "Download",
-          "args": {},
-          "command": "docmanager:download",
-          "icon": "ui-components:download",
-          "rank": 50
-        }
-      ]
+    "litePluginSettings": {
+      "@jupyterlite/pyolite-kernel:kernel": {
+        "startupCode": [
+          "import numpy as np",
+          "import micropip",
+          "await micropip.install('matplotlib')"
+        ]
+      },
+      "@jupyterlab/notebook-extension:panel": {
+        "toolbar": [
+          {
+            "name": "download",
+            "label": "Download",
+            "args": {},
+            "command": "docmanager:download",
+            "icon": "ui-components:download",
+            "rank": 50
+          }
+        ]
+      }
     }
   }
 }

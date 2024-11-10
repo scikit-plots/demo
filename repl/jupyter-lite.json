@@ -1,27 +1,27 @@
 {
   "jupyter-lite-schema-version": 0,
   "LiteBuildConfig": {
-      "apps": ["lab", "retro"],
-      "no_unused_shared_packages": true,
-      "no_sourcemaps": true,
-      "content": ["notebooks"],
-      "contents": ["content"],
-      "output_dir": "dist"
-  },
-  "jupyter-config-data": {
-    "appName": "scikit-plots REPLite",
-    "appUrl": "./repl",
-    "disabledExtensions": [
-      "@jupyterlite/javascript-kernel-extension",
-      "@jupyter-widgets/jupyterlab-manager",
-      "@jupyterlab/drawio-extension",
-      "jupyterlab-kernel-spy",
-      "jupyterlab-tour"
-    ],
     "litePluginSettings": {
       "@jupyterlite/pyodide-kernel-extension:kernel": {
         "pyodideUrl": "https://cdn.jsdelivr.net/pyodide/v0.26.0/full/pyodide.js"
       }
-    }
+    },
+    "jupyter-config-data": {
+      "appName": "scikit-plots REPLite",
+      "appUrl": "./repl",
+      "disabledExtensions": [
+        "@jupyterlite/javascript-kernel-extension",
+        "@jupyter-widgets/jupyterlab-manager",
+        "@jupyterlab/drawio-extension",
+        "jupyterlab-kernel-spy",
+        "jupyterlab-tour"
+      ]
+    },
+    "no_unused_shared_packages": true,
+    "no_sourcemaps": true,
+    "apps": ["lab", "retro"],
+    "content": "lab",
+    "contents": "content",
+    "output_dir": "dist"
   }
 }
