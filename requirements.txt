@@ -6,40 +6,18 @@ notebook~=7.2
 # voici-core~=0.7
 # voici~=0.7
 
+# Python kernel (optional)
+jupyterlite-pyodide-kernel==0.4.2
+
+# JavaScript kernel (optional)
+jupyterlite-javascript-kernel==0.3.0
+
 # Language support (optional)
 jupyterlab-language-pack-fr-FR
 jupyterlab-language-pack-zh-CN
 
-# Python kernel (optional)
-jupyterlite-pyodide-kernel~=0.4
-
-# JavaScript kernel (optional)
-jupyterlite-javascript-kernel~=0.3
-
 # P5 kernel (optional)
-jupyterlite-p5-kernel~=0.1
-
-# A terminal for JupyterLite. (optional)
-jupyterlite-terminal~=0.1
-
-# fortran kernel (optional)
-jupyter-fortran-kernel~=0.1
-
-# c kernel (optional)
-libarchive-c
-jupyter_c_kernel~=1.2
-
-# cpp kernel (optional)
-jupyter-cpp-kernel==1.0.0a8
-
-# Jupyter kernel LLMs locally (optional)
-# ipy-llm-kernel~=0.2
-# chatbot-kernel~=0.3
-
-# r kernel (optional)
-# IPython
-# r2_kernel~=0.1
-# rpy2~=3.5
+jupyterlite-p5-kernel==0.1.0
 
 # JupyterLab: Fasta file renderer (optional)
 jupyterlab-fasta>=3.3.0,<4
@@ -67,6 +45,3 @@ ipyleaflet
 # Python: plotting libraries (optional)
 plotly>=5,<6
 bqplot
-
-# Python: libraries (optional)
-scikit-plots
