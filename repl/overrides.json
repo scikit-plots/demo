@@ -5,6 +5,7 @@
     "piplite_wheels": [
       "pip",
       "scikit-plots",
+      "scikit-learn",
       "pandas"
     ],
     "litePluginSettings": {
@@ -12,7 +13,10 @@
         "startupCode": [
           "import numpy as np",
           "import micropip",
-          "await micropip.install('matplotlib')"
+          "await micropip.install('pip')",
+          "await micropip.install('scikit-plots')",
+          "await micropip.install('matplotlib')",
+          "await micropip.install('request')"
         ]
       },
       "@jupyterlab/notebook-extension:panel": {
