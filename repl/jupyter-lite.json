@@ -17,9 +17,6 @@
     "appName": "scikit-plots REPLite",
     "appUrl": "./repl",
     "disabledExtensions": [
-      "@jupyterlite/javascript-kernel-extension",
-      "@jupyter-widgets/jupyterlab-manager",
-      "@jupyterlab/drawio-extension",
       "jupyterlab-kernel-spy",
       "jupyterlab-tour"
     ]

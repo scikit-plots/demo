@@ -1,4 +1,20 @@
 {
-  "jupyter-lite-schema-version": 0,
-  "jupyter-config-data": {}
+  "jupyterlab-tour:user-tours": {
+    "tours": [
+      {
+        "id": "jupyter-lite",
+        "label": "Welcome to JupyterLite",
+        "steps": [
+          {
+            "target": "#jp-MainLogo",
+            "content": "This is JupyterLite"
+          }
+        ],
+        "options": {}
+      }
+    ]
+  },
+  "@jupyterlab/github:drive": {
+    "defaultRepo": "scikit-plots/demo"
+  }
 }
